@@ -61,7 +61,7 @@ data_sources {
     config {
         name: "linux.ftrace"
         ftrace_config {
-            atrace_apps: "run.hapi.companion"
+            atrace_apps: "com.github.abupeiyong.yas"
             atrace_categories: "gfx"
             atrace_categories: "view"
             ftrace_events: "sched/sched_switch"
@@ -77,8 +77,8 @@ EOF
 fi
 "$adb" -s "$serial" shell am instrument -w -r -e hapiScrollProfile true \
     -e class app.hapi.companion.feature.chat.ChatFrameProfileTest \
-    run.hapi.companion.test/androidx.test.runner.AndroidJUnitRunner | tee "$output/instrumentation.log"
-"$adb" -s "$serial" pull /sdcard/Android/data/run.hapi.companion/files/scroll-profile "$output/"
+    com.github.abupeiyong.yas.test/androidx.test.runner.AndroidJUnitRunner | tee "$output/instrumentation.log"
+"$adb" -s "$serial" pull /sdcard/Android/data/com.github.abupeiyong.yas/files/scroll-profile "$output/"
 if [ "${HAPI_PROFILE_TRACE:-0}" = 1 ]; then
     trace_pid=$(tr -d '\r' < "$output/perfetto-start.txt" | awk '/^[0-9]+$/ {print $1}')
     if [ -n "$trace_pid" ]; then "$adb" -s "$serial" shell kill -INT "$trace_pid"; fi

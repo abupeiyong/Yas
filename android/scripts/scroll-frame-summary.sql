@@ -13,7 +13,7 @@ WITH phases AS (
            a.jank_type, a.on_time_finish
     FROM gestures g JOIN actual_frame_timeline_slice a
       ON a.ts + a.dur BETWEEN g.ts AND g.ts + g.dur
-    WHERE a.layer_name GLOB '*run.hapi.companion*'
+    WHERE a.layer_name GLOB '*com.github.abupeiyong.yas*'
       AND a.dur > 0 AND a.present_type != 'Dropped Frame'
 ), intervals AS (
     SELECT *, (presented - LAG(presented) OVER (PARTITION BY gesture ORDER BY presented)) / 1e6 AS gap_ms

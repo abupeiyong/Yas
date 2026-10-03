@@ -5,19 +5,19 @@ export function printCliHelp(): void {
         `  ${`hapi ${agent}`.padEnd(26)} ${getFlavorLabel(agent)}`
     )).join('\n')
 
-    console.log(`HAPI - Coding agents with remote control
+    console.log(`Yas - Coding agents with remote control
 
 Usage:
   hapi                       Choose an agent interactively
   hapi <agent> [options]      Start an agent session
-  hapi <command> [options]    Run a HAPI command
+  hapi <command> [options]    Run a Yas command
 
 Agents:
 ${agents}
 
 Commands:
   hapi auth                  Manage authentication
-  hapi resume [id]           Choose or resume an existing HAPI session
+  hapi resume [id]           Choose or resume an existing Yas session
   hapi hub [--relay]         Start the API + web hub
   hapi server                Alias for hapi hub
   hapi runner                Manage the background runner
@@ -27,8 +27,8 @@ Commands:
   hapi mcp                   Start the MCP stdio bridge
 
 Options:
-  -h, --help                 Show HAPI help
-  -v, --version              Show HAPI version
+  -h, --help                 Show Yas help
+  -v, --version              Show Yas version
 
 Examples:
   hapi                       Choose an installed agent

@@ -8,7 +8,7 @@ export default function SettingsAboutPage() {
         <SettingsPageContent description={t('settings.about.description')}>
             <SettingsSection>
                 <SettingsRow label={t('settings.about.website')} trailing={
-                    <a href="https://hapi.run" target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] hover:underline">hapi.run</a>
+                    <a href="https://github.com/abupeiyong/Yas" target="_blank" rel="noopener noreferrer" className="text-[var(--app-link)] hover:underline">Yas on GitHub</a>
                 } />
                 <SettingsRow label={t('settings.about.appVersion')} trailing={<span className="text-[var(--app-hint)]">{__APP_VERSION__}</span>} />
                 <SettingsRow label={t('settings.about.protocolVersion')} trailing={<span className="text-[var(--app-hint)]">{PROTOCOL_VERSION}</span>} />

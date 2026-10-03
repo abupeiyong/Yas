@@ -30,8 +30,8 @@ if (officialBuild) {
     require(clients?.any { client ->
         val info = (client as? Map<*, *>)?.get("client_info") as? Map<*, *>
         val android = info?.get("android_client_info") as? Map<*, *>
-        android?.get("package_name") == "run.hapi.companion"
-    } == true) { "Official Firebase configuration must include run.hapi.companion" }
+        android?.get("package_name") == "com.github.abupeiyong.yas"
+    } == true) { "Firebase configuration must include com.github.abupeiyong.yas" }
 }
 if (googleServicesFile.exists()) {
     apply(plugin = "com.google.gms.google-services")
@@ -73,7 +73,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "run.hapi.companion"
+        applicationId = "com.github.abupeiyong.yas"
         minSdk = 26
         targetSdk = 36
         versionCode = providers.gradleProperty("hapiVersionCode").map { value ->

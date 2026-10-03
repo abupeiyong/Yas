@@ -5,7 +5,7 @@ independent from the web app; shares the
 [client contract](../docs/api/client-contract/index.md) and the web-generated
 golden fixtures (`shared/fixtures/`).
 
-- **applicationId**: `run.hapi.companion` · **minSdk** 26 · **target/compileSdk** 36
+- **applicationId**: `com.github.abupeiyong.yas` · **minSdk** 26 · **target/compileSdk** 36
 - **Toolchain**: Gradle 8.14.2 (wrapper) · AGP 8.11.1 · Kotlin 2.1.21 · Compose BOM 2025.05.00 · JDK 17+ (CI uses 21)
 
 ## Current capabilities
@@ -183,7 +183,7 @@ Repository configuration, set once by the maintainer:
 | Setting | Value |
 |---|---|
 | Variable `ANDROID_FIREBASE_PROJECT_ID` | Project used by the deployed relay's FCM service account |
-| Secret `ANDROID_GOOGLE_SERVICES_JSON` | Firebase **client** config for `run.hapi.companion` in that project |
+| Secret `ANDROID_GOOGLE_SERVICES_JSON` | Firebase **client** config for `com.github.abupeiyong.yas` in that project |
 | Secret `HAPI_UPLOAD_KEYSTORE_BASE64` | Base64-encoded release keystore |
 | Secret `HAPI_UPLOAD_KEYSTORE_PASSWORD` | Keystore password |
 | Secret `HAPI_UPLOAD_KEY_ALIAS` | Optional, defaults to `upload` |

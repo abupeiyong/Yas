@@ -1,15 +1,16 @@
 {
   "name": "@twsxtd/hapi",
+  "private": true,
   "version": "0.30.7",
-  "description": "App for agentic coding - access coding agent anywhere",
+  "description": "Yas - manage coding agents across your computers",
   "author": "Kirill Dubovitskiy & weishu",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "homepage": "https://github.com/tiann/hapi",
-  "bugs": "https://github.com/tiann/hapi/issues",
+  "homepage": "https://github.com/abupeiyong/Yas",
+  "bugs": "https://github.com/abupeiyong/Yas/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiann/hapi.git",
+    "url": "git+https://github.com/abupeiyong/Yas.git",
     "directory": "cli"
   },
   "bin": {
