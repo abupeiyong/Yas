@@ -47,6 +47,7 @@ bun run yas codex
 - Agent 接入：[Supported agents](docs/guide/agents.md)。
 - Codex 双端共享：[Shared sessions](docs/guide/codex-shared-sessions.md)，上游要求 Codex 0.154.0+。
 - 安全报告入口：[SECURITY.md](SECURITY.md)。
+- 首轮外发审查：[2026-10-03 安全报告](docs/security/2026-10-03-outbound-review.md)。已确认推送、语音、日志和第三方网页等外发路径；安全整改尚未实施。
 
 上游文档、营销网站、图标和发布流程仍含 HAPI 标识。不要直接运行继承的 npm/Homebrew/网站发布流程；Yas 发布渠道尚未配置。
 
